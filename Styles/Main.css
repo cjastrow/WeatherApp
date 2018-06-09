@@ -1,0 +1,136 @@
+body {
+	margin: 0px;
+	font-family: arial;
+	background-color: black;
+}
+
+@keyframes spin {
+	0% {background-image: url(../Images/link.png);}
+	30% {background-image: url(../Images/link.png);}
+	40% {background-image: url(../Images/linkSL.png);}
+	50% {background-image: url(../Images/linkU.png);}
+	60% {background-image: url(../Images/linkSR.png);}
+	70% {background-image: url(../Images/link.png);}
+	100% {background-image: url(../Images/link.png);}
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+#contain {
+	width: 900px;
+	height: 400px;
+	background-color: #BDEEFF;
+	position: fixed;
+	left: 50vw;
+	margin-left: -450px;
+}
+
+#heyListen {
+	background-image: url(../Images/HeyListen.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+#heyListen:hover {
+	cursor: pointer;
+	background-image: url(../Images/HeyListenGlow.png);
+}
+
+#headline {
+	padding-top: 20px;
+	text-align: center;
+	font-family: arial black;
+	color: blue;
+	font-weight: bold;
+	font-size: 20px;
+	user-select: none;
+}
+
+#zipBox {
+	position: absolute;
+	left: 50%;
+	margin-top: 10px;
+	margin-left: -50px;
+	width: 100px;
+}
+
+#submitBtn {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -40px;
+	text-align: center;
+	width: 80px;
+	height: 25px;
+	font-family: arial black;
+	color: white;
+	background-color: green;
+	border: 2px solid black;
+	user-select: none;
+}
+
+#submitBtn:hover {
+	background-color: blue;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+#weatherResults {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 140px;
+	padding-top: 20px;
+	margin-left: -250px;
+	width: 500px;
+	height: 160px;
+	background-color: green;
+	font-family: arial;
+	font-size: 20px;
+	color: white;
+	border: 2px solid white;
+}
+
+#cityName {
+	margin: 0px 0px 10px 0px;
+	text-align: center;
+	font-family: arial black;
+	font-size: 30px;
+}
+
+#weatherInfo {
+	padding-left: 60px;
+	font-family: arial;
+	font-size: 20px;
+	color: white;
+}
+
+#linkSpin {
+	position: absolute;
+	left: 430px;
+	top: 93px;
+	width: 50px;
+	height: 25px;
+	background-image: url(../Images/link.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	animation: spin 1s infinite linear;
+}

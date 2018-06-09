@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="Styles/Main.css">
+	<script src="Scripts/jquery.min.js"></script>
+	<!-- Use this to link to GSAP...
+	<script src="Scripts/TweenMax.min.js"></script>
+	-->
+</head>
+<body>
+
+	<audio id="heyListenAudio" src="Audio/HeyListen.mp3"></audio>
+	<audio id="linkAudio" src="Audio/Link.mp3"></audio>
+	
+	<div id="contain">
+		<div id="heyListen"></div>
+		<div id="headline">Hey listen! Type a zip-code in the box below, and click submit!</div>
+		<input id="zipBox" type="text" maxlength="5" value="37076">
+		<div id="linkSpin"></div>
+		<div id="submitBtn">SUBMIT</div>
+		<div id="weatherResults">
+			<div id="cityName"></div>
+			<div id="weatherInfo"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="Scripts/Main.js"></script>
+</body>
+</html>
